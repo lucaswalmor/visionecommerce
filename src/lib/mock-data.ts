@@ -3,7 +3,7 @@ import type {
   CustomerEvent,
   Payment,
   Subscription,
-} from "@/lib/types";
+} from "./types";
 
 export const customers: Customer[] = [
   { id: "cust_maya", name: "Maya Chen", email: "maya.chen@email.com" },

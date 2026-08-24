@@ -1,0 +1,106 @@
+[
+  {
+    "id": "sub_maya",
+    "customerId": "cust_maya",
+    "status": "active",
+    "monthlyValue": 49,
+    "nextBillingDate": "2026-09-12",
+    "createdAt": "2026-01-12"
+  },
+  {
+    "id": "sub_john",
+    "customerId": "cust_john",
+    "status": "payment_failed",
+    "monthlyValue": 59,
+    "nextBillingDate": "2026-08-20",
+    "createdAt": "2025-11-20"
+  },
+  {
+    "id": "sub_sofia",
+    "customerId": "cust_sofia",
+    "status": "cancellation_requested",
+    "monthlyValue": 79,
+    "nextBillingDate": "2026-09-01",
+    "createdAt": "2025-09-01"
+  },
+  {
+    "id": "sub_liam",
+    "customerId": "cust_liam",
+    "status": "skipped",
+    "monthlyValue": 39,
+    "nextBillingDate": "2026-09-05",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": "sub_emma",
+    "customerId": "cust_emma",
+    "status": "active",
+    "monthlyValue": 49,
+    "nextBillingDate": "2026-09-08",
+    "createdAt": "2025-12-08"
+  },
+  {
+    "id": "sub_noah",
+    "customerId": "cust_noah",
+    "status": "active",
+    "monthlyValue": 59,
+    "nextBillingDate": "2026-09-15",
+    "createdAt": "2026-02-15"
+  },
+  {
+    "id": "sub_ava",
+    "customerId": "cust_ava",
+    "status": "payment_failed",
+    "monthlyValue": 49,
+    "nextBillingDate": "2026-08-18",
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": "sub_lucas",
+    "customerId": "cust_lucas",
+    "status": "cancelled",
+    "monthlyValue": 69,
+    "nextBillingDate": "2026-07-01",
+    "createdAt": "2025-07-01"
+  },
+  {
+    "id": "sub_isla",
+    "customerId": "cust_isla",
+    "status": "skipped",
+    "monthlyValue": 39,
+    "nextBillingDate": "2026-09-10",
+    "createdAt": "2026-04-10"
+  },
+  {
+    "id": "sub_ethan",
+    "customerId": "cust_ethan",
+    "status": "cancellation_requested",
+    "monthlyValue": 89,
+    "nextBillingDate": "2026-08-28",
+    "createdAt": "2025-08-28"
+  },
+  {
+    "id": "sub_priya",
+    "customerId": "cust_priya",
+    "status": "active",
+    "monthlyValue": 49,
+    "nextBillingDate": "2026-09-20",
+    "createdAt": "2026-05-20"
+  },
+  {
+    "id": "sub_owen",
+    "customerId": "cust_owen",
+    "status": "payment_failed",
+    "monthlyValue": 59,
+    "nextBillingDate": "2026-08-22",
+    "createdAt": "2025-10-22"
+  },
+  {
+    "id": "sub_clara",
+    "customerId": "cust_clara",
+    "status": "active",
+    "monthlyValue": 79,
+    "nextBillingDate": "2026-09-03",
+    "createdAt": "2025-09-03"
+  }
+]

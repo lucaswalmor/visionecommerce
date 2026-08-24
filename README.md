@@ -8,7 +8,7 @@ A subscription business needs to see, quickly, which customers are about to chur
 
 ## Solution
 
-This app reads mock HTTP APIs and calculates retention metrics in the client. The result is a single **Retention Dashboard**: KPI cards, a risk table, a reason breakdown, and simulated retention playbooks.
+This app reads a **public mock HTTP API** and calculates retention metrics in the client. The result is a single **Retention Dashboard**: KPI cards, a risk table, a reason breakdown, and simulated retention playbooks.
 
 ## Stack
 
@@ -39,21 +39,34 @@ Key files:
 
 - `src/lib/churn-risk.test.ts` — risk signals and High / Medium classification
 - `src/lib/metrics.test.ts` — Active Subscribers, MRR, LTV, recovered revenue, and dashboard KPIs
+- `src/lib/api.test.ts` — public mock API URLs and fetch error handling
 
 `npm test` also asserts the mock dataset still produces the same dashboard numbers (5 active, $285 MRR, 7 at risk, $128 recovered). If you change `src/lib/mock-data.ts`, update those expectations.
 
 ## Data
 
-Mock JSON is served by Next.js route handlers:
+The dashboard **pulls from a public mock API**: a public GitHub Gist with CORS enabled.
+
+Base URL:
+
+`https://gist.githubusercontent.com/lucaswalmor/6b6dd88fc949f33da7820c53b88d0741/raw`
 
 | Endpoint | Entity |
 | --- | --- |
-| `GET /api/customers` | id, name, email |
-| `GET /api/subscriptions` | id, customerId, status, monthlyValue, nextBillingDate, createdAt |
-| `GET /api/payments` | id, customerId, subscriptionId, amount, status, createdAt |
-| `GET /api/events` | journey events (`subscription_created`, `payment_failed`, `payment_success`, `renewal_skipped`, `cancellation_started`, `subscription_cancelled`) |
+| `GET .../customers.json` | id, name, email |
+| `GET .../subscriptions.json` | id, customerId, status, monthlyValue, nextBillingDate, createdAt |
+| `GET .../payments.json` | id, customerId, subscriptionId, amount, status, createdAt |
+| `GET .../events.json` | journey events (`subscription_created`, `payment_failed`, `payment_success`, `renewal_skipped`, `cancellation_started`, `subscription_cancelled`) |
 
-Source data lives in `src/lib/mock-data.ts`. The dashboard never hardcodes KPI numbers; every card is derived from the API payload.
+`src/lib/api.ts` loads the four URLs with `Promise.all`. The UI never hardcodes KPI numbers.
+
+The same JSON also lives in `public/mock/` and `db.json`, generated from `src/lib/mock-data.ts`:
+
+```bash
+npm run export-mock
+```
+
+For offline work, set `NEXT_PUBLIC_API_BASE_URL=local` to use the Next.js route handlers under `/api/*` instead. See `.env.example`.
 
 ## Metrics
 
@@ -65,7 +78,7 @@ Source data lives in `src/lib/mock-data.ts`. The dashboard never hardcodes KPI n
 | **Failed Payments** | Count of payment records with `status === "failed"` |
 | **Revenue at Risk** | Sum of `monthlyValue` for at-risk subscriptions |
 | **LTV** | Sum of that customer's payments with `status === "paid"` |
-| **Recovered Revenue** | Sum of paid charges that follow a failed charge on the same subscription |
+| **Recovered Revenue** | Sum of paid charges that follow a failed charge on the same subscription. Acceptable for this challenge; in production this would use a recovery window or an explicit retry/recovery id. |
 
 Churn rules live in `src/lib/churn-risk.ts`:
 
@@ -79,14 +92,16 @@ Churn rules live in `src/lib/churn-risk.ts`:
 
 ```
 src/
-  app/api/*/route.ts     HTTP mock APIs
+  app/api/*/route.ts     Optional local fallback (`NEXT_PUBLIC_API_BASE_URL=local`)
   lib/types.ts           Shared types
-  lib/api.ts             Fetch layer
-  lib/mock-data.ts       Dataset
+  lib/api.ts             Fetch layer (public gist by default)
+  lib/mock-data.ts       Dataset used by tests and export
   lib/metrics.ts         KPI calculations
   lib/churn-risk.ts      Risk rules
   lib/*.test.ts          Unit tests
   components/            Dashboard UI
+public/mock/*.json       JSON served by the public gist
+db.json                  Same dataset in one file
 ```
 
 ## Production Evolution

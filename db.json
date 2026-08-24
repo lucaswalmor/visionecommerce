@@ -1,0 +1,1269 @@
+{
+  "customers": [
+    {
+      "id": "cust_maya",
+      "name": "Maya Chen",
+      "email": "maya.chen@email.com"
+    },
+    {
+      "id": "cust_john",
+      "name": "John Doe",
+      "email": "john.doe@email.com"
+    },
+    {
+      "id": "cust_sofia",
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@email.com"
+    },
+    {
+      "id": "cust_liam",
+      "name": "Liam Okafor",
+      "email": "liam.okafor@email.com"
+    },
+    {
+      "id": "cust_emma",
+      "name": "Emma Wright",
+      "email": "emma.wright@email.com"
+    },
+    {
+      "id": "cust_noah",
+      "name": "Noah Patel",
+      "email": "noah.patel@email.com"
+    },
+    {
+      "id": "cust_ava",
+      "name": "Ava Berg",
+      "email": "ava.berg@email.com"
+    },
+    {
+      "id": "cust_lucas",
+      "name": "Lucas Moreira",
+      "email": "lucas.moreira@email.com"
+    },
+    {
+      "id": "cust_isla",
+      "name": "Isla Nakamura",
+      "email": "isla.nakamura@email.com"
+    },
+    {
+      "id": "cust_ethan",
+      "name": "Ethan Brooks",
+      "email": "ethan.brooks@email.com"
+    },
+    {
+      "id": "cust_priya",
+      "name": "Priya Shah",
+      "email": "priya.shah@email.com"
+    },
+    {
+      "id": "cust_owen",
+      "name": "Owen Gallagher",
+      "email": "owen.gallagher@email.com"
+    },
+    {
+      "id": "cust_clara",
+      "name": "Clara Mendes",
+      "email": "clara.mendes@email.com"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_maya",
+      "customerId": "cust_maya",
+      "status": "active",
+      "monthlyValue": 49,
+      "nextBillingDate": "2026-09-12",
+      "createdAt": "2026-01-12"
+    },
+    {
+      "id": "sub_john",
+      "customerId": "cust_john",
+      "status": "payment_failed",
+      "monthlyValue": 59,
+      "nextBillingDate": "2026-08-20",
+      "createdAt": "2025-11-20"
+    },
+    {
+      "id": "sub_sofia",
+      "customerId": "cust_sofia",
+      "status": "cancellation_requested",
+      "monthlyValue": 79,
+      "nextBillingDate": "2026-09-01",
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": "sub_liam",
+      "customerId": "cust_liam",
+      "status": "skipped",
+      "monthlyValue": 39,
+      "nextBillingDate": "2026-09-05",
+      "createdAt": "2026-03-05"
+    },
+    {
+      "id": "sub_emma",
+      "customerId": "cust_emma",
+      "status": "active",
+      "monthlyValue": 49,
+      "nextBillingDate": "2026-09-08",
+      "createdAt": "2025-12-08"
+    },
+    {
+      "id": "sub_noah",
+      "customerId": "cust_noah",
+      "status": "active",
+      "monthlyValue": 59,
+      "nextBillingDate": "2026-09-15",
+      "createdAt": "2026-02-15"
+    },
+    {
+      "id": "sub_ava",
+      "customerId": "cust_ava",
+      "status": "payment_failed",
+      "monthlyValue": 49,
+      "nextBillingDate": "2026-08-18",
+      "createdAt": "2026-01-18"
+    },
+    {
+      "id": "sub_lucas",
+      "customerId": "cust_lucas",
+      "status": "cancelled",
+      "monthlyValue": 69,
+      "nextBillingDate": "2026-07-01",
+      "createdAt": "2025-07-01"
+    },
+    {
+      "id": "sub_isla",
+      "customerId": "cust_isla",
+      "status": "skipped",
+      "monthlyValue": 39,
+      "nextBillingDate": "2026-09-10",
+      "createdAt": "2026-04-10"
+    },
+    {
+      "id": "sub_ethan",
+      "customerId": "cust_ethan",
+      "status": "cancellation_requested",
+      "monthlyValue": 89,
+      "nextBillingDate": "2026-08-28",
+      "createdAt": "2025-08-28"
+    },
+    {
+      "id": "sub_priya",
+      "customerId": "cust_priya",
+      "status": "active",
+      "monthlyValue": 49,
+      "nextBillingDate": "2026-09-20",
+      "createdAt": "2026-05-20"
+    },
+    {
+      "id": "sub_owen",
+      "customerId": "cust_owen",
+      "status": "payment_failed",
+      "monthlyValue": 59,
+      "nextBillingDate": "2026-08-22",
+      "createdAt": "2025-10-22"
+    },
+    {
+      "id": "sub_clara",
+      "customerId": "cust_clara",
+      "status": "active",
+      "monthlyValue": 79,
+      "nextBillingDate": "2026-09-03",
+      "createdAt": "2025-09-03"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_maya_01",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-01-12"
+    },
+    {
+      "id": "pay_maya_02",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-02-12"
+    },
+    {
+      "id": "pay_maya_03",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-03-12"
+    },
+    {
+      "id": "pay_maya_04",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-04-12"
+    },
+    {
+      "id": "pay_maya_05",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-05-12"
+    },
+    {
+      "id": "pay_maya_06",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-06-12"
+    },
+    {
+      "id": "pay_maya_07",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "pay_john_01",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2025-11-20"
+    },
+    {
+      "id": "pay_john_02",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2025-12-20"
+    },
+    {
+      "id": "pay_john_03",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-01-20"
+    },
+    {
+      "id": "pay_john_04",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-02-20"
+    },
+    {
+      "id": "pay_john_05",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-03-20"
+    },
+    {
+      "id": "pay_john_06",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-04-20"
+    },
+    {
+      "id": "pay_john_07",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-05-20"
+    },
+    {
+      "id": "pay_john_08",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-06-20"
+    },
+    {
+      "id": "pay_john_09",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "id": "pay_john_fail",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "amount": 59,
+      "status": "failed",
+      "createdAt": "2026-08-20"
+    },
+    {
+      "id": "pay_sofia_01",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": "pay_sofia_02",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-10-01"
+    },
+    {
+      "id": "pay_sofia_03",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-11-01"
+    },
+    {
+      "id": "pay_sofia_04",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-12-01"
+    },
+    {
+      "id": "pay_sofia_05",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": "pay_sofia_06",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-02-01"
+    },
+    {
+      "id": "pay_sofia_07",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-03-01"
+    },
+    {
+      "id": "pay_sofia_08",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-04-01"
+    },
+    {
+      "id": "pay_sofia_09",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-05-01"
+    },
+    {
+      "id": "pay_sofia_10",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-06-01"
+    },
+    {
+      "id": "pay_sofia_11",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-07-01"
+    },
+    {
+      "id": "pay_liam_01",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-03-05"
+    },
+    {
+      "id": "pay_liam_02",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-04-05"
+    },
+    {
+      "id": "pay_liam_03",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-05-05"
+    },
+    {
+      "id": "pay_liam_04",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-06-05"
+    },
+    {
+      "id": "pay_liam_05",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-07-05"
+    },
+    {
+      "id": "pay_emma_01",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2025-12-08"
+    },
+    {
+      "id": "pay_emma_02",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-01-08"
+    },
+    {
+      "id": "pay_emma_03",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-02-08"
+    },
+    {
+      "id": "pay_emma_04",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-03-08"
+    },
+    {
+      "id": "pay_emma_05",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-04-08"
+    },
+    {
+      "id": "pay_emma_06",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-05-08"
+    },
+    {
+      "id": "pay_emma_07",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-06-08"
+    },
+    {
+      "id": "pay_emma_fail",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "failed",
+      "createdAt": "2026-07-08"
+    },
+    {
+      "id": "pay_emma_recovered",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-07-11"
+    },
+    {
+      "id": "pay_noah_01",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-02-15"
+    },
+    {
+      "id": "pay_noah_02",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-03-15"
+    },
+    {
+      "id": "pay_noah_03",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-04-15"
+    },
+    {
+      "id": "pay_noah_04",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-05-15"
+    },
+    {
+      "id": "pay_noah_05",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-06-15"
+    },
+    {
+      "id": "pay_noah_06",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "pay_ava_01",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-01-18"
+    },
+    {
+      "id": "pay_ava_02",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "pay_ava_03",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-03-18"
+    },
+    {
+      "id": "pay_ava_04",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-04-18"
+    },
+    {
+      "id": "pay_ava_05",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-05-18"
+    },
+    {
+      "id": "pay_ava_06",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-06-18"
+    },
+    {
+      "id": "pay_ava_07",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-07-18"
+    },
+    {
+      "id": "pay_ava_fail",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "amount": 49,
+      "status": "failed",
+      "createdAt": "2026-08-18"
+    },
+    {
+      "id": "pay_lucas_01",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-07-01"
+    },
+    {
+      "id": "pay_lucas_02",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-08-01"
+    },
+    {
+      "id": "pay_lucas_03",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": "pay_lucas_04",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-10-01"
+    },
+    {
+      "id": "pay_lucas_05",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-11-01"
+    },
+    {
+      "id": "pay_lucas_06",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2025-12-01"
+    },
+    {
+      "id": "pay_lucas_07",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": "pay_lucas_08",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-02-01"
+    },
+    {
+      "id": "pay_lucas_09",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-03-01"
+    },
+    {
+      "id": "pay_lucas_10",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-04-01"
+    },
+    {
+      "id": "pay_lucas_11",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-05-01"
+    },
+    {
+      "id": "pay_lucas_12",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "amount": 69,
+      "status": "paid",
+      "createdAt": "2026-06-01"
+    },
+    {
+      "id": "pay_isla_01",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-04-10"
+    },
+    {
+      "id": "pay_isla_02",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "pay_isla_03",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-06-10"
+    },
+    {
+      "id": "pay_isla_04",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "amount": 39,
+      "status": "paid",
+      "createdAt": "2026-07-10"
+    },
+    {
+      "id": "pay_ethan_01",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2025-08-28"
+    },
+    {
+      "id": "pay_ethan_02",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2025-09-28"
+    },
+    {
+      "id": "pay_ethan_03",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2025-10-28"
+    },
+    {
+      "id": "pay_ethan_04",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2025-11-28"
+    },
+    {
+      "id": "pay_ethan_05",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2025-12-28"
+    },
+    {
+      "id": "pay_ethan_06",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-01-28"
+    },
+    {
+      "id": "pay_ethan_07",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-02-28"
+    },
+    {
+      "id": "pay_ethan_08",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-03-28"
+    },
+    {
+      "id": "pay_ethan_09",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-04-28"
+    },
+    {
+      "id": "pay_ethan_10",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": "pay_ethan_11",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-06-28"
+    },
+    {
+      "id": "pay_ethan_12",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "amount": 89,
+      "status": "paid",
+      "createdAt": "2026-07-28"
+    },
+    {
+      "id": "pay_priya_01",
+      "customerId": "cust_priya",
+      "subscriptionId": "sub_priya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-05-20"
+    },
+    {
+      "id": "pay_priya_02",
+      "customerId": "cust_priya",
+      "subscriptionId": "sub_priya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-06-20"
+    },
+    {
+      "id": "pay_priya_03",
+      "customerId": "cust_priya",
+      "subscriptionId": "sub_priya",
+      "amount": 49,
+      "status": "paid",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "id": "pay_owen_01",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2025-10-22"
+    },
+    {
+      "id": "pay_owen_02",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2025-11-22"
+    },
+    {
+      "id": "pay_owen_03",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2025-12-22"
+    },
+    {
+      "id": "pay_owen_04",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-01-22"
+    },
+    {
+      "id": "pay_owen_05",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-02-22"
+    },
+    {
+      "id": "pay_owen_06",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-03-22"
+    },
+    {
+      "id": "pay_owen_07",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-04-22"
+    },
+    {
+      "id": "pay_owen_08",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-05-22"
+    },
+    {
+      "id": "pay_owen_09",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-06-22"
+    },
+    {
+      "id": "pay_owen_10",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "paid",
+      "createdAt": "2026-07-22"
+    },
+    {
+      "id": "pay_owen_fail",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "amount": 59,
+      "status": "failed",
+      "createdAt": "2026-08-22"
+    },
+    {
+      "id": "pay_clara_01",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-09-03"
+    },
+    {
+      "id": "pay_clara_02",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-10-03"
+    },
+    {
+      "id": "pay_clara_03",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-11-03"
+    },
+    {
+      "id": "pay_clara_04",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2025-12-03"
+    },
+    {
+      "id": "pay_clara_05",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-01-03"
+    },
+    {
+      "id": "pay_clara_06",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-02-03"
+    },
+    {
+      "id": "pay_clara_07",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-03-03"
+    },
+    {
+      "id": "pay_clara_08",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-04-03"
+    },
+    {
+      "id": "pay_clara_09",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-05-03"
+    },
+    {
+      "id": "pay_clara_10",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-06-03"
+    },
+    {
+      "id": "pay_clara_fail",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "failed",
+      "createdAt": "2026-07-03"
+    },
+    {
+      "id": "pay_clara_recovered",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "amount": 79,
+      "status": "paid",
+      "createdAt": "2026-07-06"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_maya_created",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "type": "subscription_created",
+      "createdAt": "2026-01-12"
+    },
+    {
+      "id": "evt_maya_paid",
+      "customerId": "cust_maya",
+      "subscriptionId": "sub_maya",
+      "type": "payment_success",
+      "createdAt": "2026-08-12"
+    },
+    {
+      "id": "evt_john_created",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "type": "subscription_created",
+      "createdAt": "2025-11-20"
+    },
+    {
+      "id": "evt_john_fail",
+      "customerId": "cust_john",
+      "subscriptionId": "sub_john",
+      "type": "payment_failed",
+      "createdAt": "2026-08-20"
+    },
+    {
+      "id": "evt_sofia_created",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "type": "subscription_created",
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": "evt_sofia_cancel",
+      "customerId": "cust_sofia",
+      "subscriptionId": "sub_sofia",
+      "type": "cancellation_started",
+      "createdAt": "2026-08-19"
+    },
+    {
+      "id": "evt_liam_created",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "type": "subscription_created",
+      "createdAt": "2026-03-05"
+    },
+    {
+      "id": "evt_liam_skip",
+      "customerId": "cust_liam",
+      "subscriptionId": "sub_liam",
+      "type": "renewal_skipped",
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "evt_emma_created",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "type": "subscription_created",
+      "createdAt": "2025-12-08"
+    },
+    {
+      "id": "evt_emma_fail",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "type": "payment_failed",
+      "createdAt": "2026-07-08"
+    },
+    {
+      "id": "evt_emma_recovered",
+      "customerId": "cust_emma",
+      "subscriptionId": "sub_emma",
+      "type": "payment_success",
+      "createdAt": "2026-07-11"
+    },
+    {
+      "id": "evt_noah_created",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "type": "subscription_created",
+      "createdAt": "2026-02-15"
+    },
+    {
+      "id": "evt_noah_paid",
+      "customerId": "cust_noah",
+      "subscriptionId": "sub_noah",
+      "type": "payment_success",
+      "createdAt": "2026-08-15"
+    },
+    {
+      "id": "evt_ava_created",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "type": "subscription_created",
+      "createdAt": "2026-01-18"
+    },
+    {
+      "id": "evt_ava_fail",
+      "customerId": "cust_ava",
+      "subscriptionId": "sub_ava",
+      "type": "payment_failed",
+      "createdAt": "2026-08-18"
+    },
+    {
+      "id": "evt_lucas_created",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "type": "subscription_created",
+      "createdAt": "2025-07-01"
+    },
+    {
+      "id": "evt_lucas_cancel_start",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "type": "cancellation_started",
+      "createdAt": "2026-06-20"
+    },
+    {
+      "id": "evt_lucas_cancelled",
+      "customerId": "cust_lucas",
+      "subscriptionId": "sub_lucas",
+      "type": "subscription_cancelled",
+      "createdAt": "2026-07-01"
+    },
+    {
+      "id": "evt_isla_created",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "type": "subscription_created",
+      "createdAt": "2026-04-10"
+    },
+    {
+      "id": "evt_isla_skip",
+      "customerId": "cust_isla",
+      "subscriptionId": "sub_isla",
+      "type": "renewal_skipped",
+      "createdAt": "2026-08-10"
+    },
+    {
+      "id": "evt_ethan_created",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "type": "subscription_created",
+      "createdAt": "2025-08-28"
+    },
+    {
+      "id": "evt_ethan_cancel",
+      "customerId": "cust_ethan",
+      "subscriptionId": "sub_ethan",
+      "type": "cancellation_started",
+      "createdAt": "2026-08-16"
+    },
+    {
+      "id": "evt_priya_created",
+      "customerId": "cust_priya",
+      "subscriptionId": "sub_priya",
+      "type": "subscription_created",
+      "createdAt": "2026-05-20"
+    },
+    {
+      "id": "evt_priya_paid",
+      "customerId": "cust_priya",
+      "subscriptionId": "sub_priya",
+      "type": "payment_success",
+      "createdAt": "2026-08-20"
+    },
+    {
+      "id": "evt_owen_created",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "type": "subscription_created",
+      "createdAt": "2025-10-22"
+    },
+    {
+      "id": "evt_owen_skip",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "type": "renewal_skipped",
+      "createdAt": "2026-07-22"
+    },
+    {
+      "id": "evt_owen_fail",
+      "customerId": "cust_owen",
+      "subscriptionId": "sub_owen",
+      "type": "payment_failed",
+      "createdAt": "2026-08-22"
+    },
+    {
+      "id": "evt_clara_created",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "type": "subscription_created",
+      "createdAt": "2025-09-03"
+    },
+    {
+      "id": "evt_clara_fail",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "type": "payment_failed",
+      "createdAt": "2026-07-03"
+    },
+    {
+      "id": "evt_clara_recovered",
+      "customerId": "cust_clara",
+      "subscriptionId": "sub_clara",
+      "type": "payment_success",
+      "createdAt": "2026-07-06"
+    }
+  ]
+}

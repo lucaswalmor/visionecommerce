@@ -1,0 +1,67 @@
+[
+  {
+    "id": "cust_maya",
+    "name": "Maya Chen",
+    "email": "maya.chen@email.com"
+  },
+  {
+    "id": "cust_john",
+    "name": "John Doe",
+    "email": "john.doe@email.com"
+  },
+  {
+    "id": "cust_sofia",
+    "name": "Sofia Alvarez",
+    "email": "sofia.alvarez@email.com"
+  },
+  {
+    "id": "cust_liam",
+    "name": "Liam Okafor",
+    "email": "liam.okafor@email.com"
+  },
+  {
+    "id": "cust_emma",
+    "name": "Emma Wright",
+    "email": "emma.wright@email.com"
+  },
+  {
+    "id": "cust_noah",
+    "name": "Noah Patel",
+    "email": "noah.patel@email.com"
+  },
+  {
+    "id": "cust_ava",
+    "name": "Ava Berg",
+    "email": "ava.berg@email.com"
+  },
+  {
+    "id": "cust_lucas",
+    "name": "Lucas Moreira",
+    "email": "lucas.moreira@email.com"
+  },
+  {
+    "id": "cust_isla",
+    "name": "Isla Nakamura",
+    "email": "isla.nakamura@email.com"
+  },
+  {
+    "id": "cust_ethan",
+    "name": "Ethan Brooks",
+    "email": "ethan.brooks@email.com"
+  },
+  {
+    "id": "cust_priya",
+    "name": "Priya Shah",
+    "email": "priya.shah@email.com"
+  },
+  {
+    "id": "cust_owen",
+    "name": "Owen Gallagher",
+    "email": "owen.gallagher@email.com"
+  },
+  {
+    "id": "cust_clara",
+    "name": "Clara Mendes",
+    "email": "clara.mendes@email.com"
+  }
+]
