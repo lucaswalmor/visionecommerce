@@ -16,6 +16,7 @@ This app reads mock HTTP APIs and calculates retention metrics in the client. Th
 - React + TypeScript
 - Tailwind CSS
 - Recharts
+- Vitest
 - Deployable on Vercel
 
 ```bash
@@ -24,6 +25,22 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Tests
+
+Unit tests cover the churn rules and metric calculations in `src/lib`. They do not hit the network.
+
+```bash
+npm test
+npm run test:watch
+```
+
+Key files:
+
+- `src/lib/churn-risk.test.ts` — risk signals and High / Medium classification
+- `src/lib/metrics.test.ts` — Active Subscribers, MRR, LTV, recovered revenue, and dashboard KPIs
+
+`npm test` also asserts the mock dataset still produces the same dashboard numbers (5 active, $285 MRR, 7 at risk, $128 recovered). If you change `src/lib/mock-data.ts`, update those expectations.
 
 ## Data
 
@@ -68,6 +85,7 @@ src/
   lib/mock-data.ts       Dataset
   lib/metrics.ts         KPI calculations
   lib/churn-risk.ts      Risk rules
+  lib/*.test.ts          Unit tests
   components/            Dashboard UI
 ```
 
